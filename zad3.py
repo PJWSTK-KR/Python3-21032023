@@ -1,9 +1,9 @@
 import getpass
 import random
 
-round_number = int(getpass.getpass('Ilość rund(3)> '))
-player_count = int(getpass.getpass('Ilość graczy(1)> '))
-names_of_players = [getpass.getpass('Nazwa gracza 1> '), getpass.getpass('Nazwa gracza 2> ')]
+round_number = int(input('Ilość rund(3)> '))
+player_count = int(input('Ilość graczy(1)> '))
+names_of_players = [input('Nazwa gracza 1> '), input('Nazwa gracza 2> ')]
 games = []
 print("Początek gry!")
 for i in range(0, round_number):
