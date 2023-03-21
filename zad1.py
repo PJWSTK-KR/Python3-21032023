@@ -5,9 +5,10 @@ def find_min(numbers = []):
         return numbers[0]
     min_number = numbers[0]
     for number in numbers[1:len(numbers)]:
-        if number < min_number:
+        if int(number) < int(min_number):
             min_number = number
     return min_number
+
 
 def find_max(numbers = []):
     if len(numbers) == 0:
@@ -16,7 +17,7 @@ def find_max(numbers = []):
         return numbers[0]
     max_number = numbers[0]
     for number in numbers[1:len(numbers)]:
-        if number > max_number:
+        if int(number) > int(max_number):
             max_number = number
     return max_number
 
